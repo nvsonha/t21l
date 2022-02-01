@@ -48,7 +48,3 @@ pub fn direction(game_input: &GameInput) -> Vec2 {
     }
     direction.normalize_or_zero()
 }
-
-pub fn fire(input: &GameInput) -> bool {
-    input.buffer[0] & INPUT_FIRE != 0
-}
